@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Pierre Sakagne Ndione</title>
+  <style>
+    :root{--bg:#f7f8fb;--card:#ffffff;--muted:#6b7280;--accent:#4f46e5;}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; margin:0; background:var(--bg); color:#111827; -webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:28px auto;padding:20px}
+    header.card{display:flex;gap:20px;align-items:center;background:var(--card);padding:26px;border-radius:18px;box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+    .avatar{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#8b5cf6);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:8px 0 0;color:var(--muted)}
+    .meta{margin-top:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:10px;font-size:14px}
+    a.link{color:var(--accent);text-decoration:none}
+    main.grid{display:grid;grid-template-columns:2fr 1fr;gap:22px;margin-top:22px}
+    .card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    h2{margin:0 0 10px;font-size:20px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#f3f4f6;padding:8px 10px;border-radius:8px;font-size:13px;color:#374151}
+    .project{border-left:3px solid #e6e6e6;padding:12px;margin-bottom:10px;border-radius:6px;background:linear-gradient(180deg,rgba(0,0,0,0.00),rgba(0,0,0,0.00))}
+    ul{margin:8px 0 0;padding-left:18px;color:#374151}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+    .contact-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;border:1px solid #e6e6e6;background:white;text-decoration:none;color:#111827;font-weight:600;font-size:14px}
+    .btn.primary{background:var(--accent);color:white;border:none;box-shadow:0 6px 18px rgba(79,70,229,0.18)}
+    @media (max-width:900px){main.grid{grid-template-columns:1fr} header.card{flex-direction:row;align-items:center} .avatar{width:72px;height:72px;font-size:20px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="card">
+      <div class="avatar">PS</div>
+      <div style="flex:1">
+        <h1>Pierre Sakagne Ndione</h1>
+        <p class="lead">Ingénieur en informatique • Chef du Service Informatique — Chemins de Fer du Sénégal (CFS)</p>
+        <div class="meta">
+          <div>📍 Thiès, Sénégal</div>
+          <div>📞 +221 77 531 25 91</div>
+          <div>✉️ <a class="link" href="mailto:pierresakagnendione@gmail.com">pierresakagnendione@gmail.com</a></div>
+          <div>🔗 <a class="link" href="https://www.linkedin.com/in/pierre-sakagne-ndione-8372828b/" target="_blank" rel="noopener">LinkedIn</a></div>
+        </div>
+      </div>
+      <div style="margin-left:12px">
+        <a class="btn primary" href="#contact">Contactez-moi</a>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>À propos</h2>
+        <p style="color:var(--muted);margin-top:10px;line-height:1.6">
+          Ingénieur en informatique avec plus de 10 ans d'expérience dans la conception, le déploiement et la maintenance d'infrastructures IT et d'applications métier. Compétences fortes en génie logiciel (Java, C#, VB.NET), administration réseau et solutions Odoo.
+        </p>
+
+        <h3 style="margin-top:16px">Compétences clés</h3>
+        <div class="skills" style="margin-top:8px">
+          <div class="skill">Java / Spring</div>
+          <div class="skill">C# / .NET</div>
+          <div class="skill">Odoo (paie & gestion)</div>
+          <div class="skill">Administration Réseau</div>
+          <div class="skill">Azure & SQL</div>
+          <div class="skill">Linux & DevOps</div>
+        </div>
+
+        <h3 style="margin-top:16px">Expérience</h3>
+        <div style="margin-top:10px">
+          <strong>Chef du Service Informatique et Outils de Télécommunication — CFS</strong>
+          <div style="color:var(--muted);font-size:13px">Janvier 2021 — Présent</div>
+          <ul>
+            <li>Supervision de l'infrastructure réseau et des services applicatifs pour l'entreprise ferroviaire nationale.</li>
+            <li>Conception et maintien d'un module de gestion de la paie développé sous Odoo, en production.</li>
+            <li>Planification de projets d'infrastructure, gestion des incidents et amélioration continue des opérations IT.</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Chef de section informatique — CFS (avant 2018)</strong>
+          <div style="color:var(--muted);font-size:13px">Support, administration réseau et automatisation des tâches.</div>
+        </div>
+
+        <h3 style="margin-top:16px">Projets remarquables</h3>
+        <div style="margin-top:8px">
+          <div class="project">
+            <strong>Système de gestion de la paie (Odoo)</strong>
+            <div style="color:var(--muted);font-size:13px;margin-top:6px">Tech stack: Python, Odoo, PostgreSQL, Linux</div>
+            <p style="margin-top:8px">Développement d'un module de paie personnalisé adapté aux règles locales — intégration des fiches de paie, calcul des impôts et génération des rapports RH.</p>
+          </div>
+
+          <div class="project">
+            <strong>Refonte de l'infrastructure réseau</strong>
+            <div style="color:var(--muted);font-size:13px;margin-top:6px">Tech stack: VLAN, VPN, firewalls, scripts d'automatisation</div>
+            <p style="margin-top:8px">Migration partielle des services vers une architecture plus résiliente, sécurisation des accès et automatisation des sauvegardes.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="card">
+        <div>
+          <h3>Formation</h3>
+          <div style="color:var(--muted);font-size:14px;margin-top:8px">
+            <div>Master en Informatique — ESTM, Dakar</div>
+            <div>Diplôme d'ingénieur technologue — ESTM Dakar (2007)</div>
+            <div>DIT en téléinformatique</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3>Langues</h3>
+          <div style="color:var(--muted);font-size:14px;margin-top:8px">Français (natif), Anglais (professionnel)</div>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3>Note personnelle</h3>
+          <p style="color:var(--muted);font-size:14px;margin-top:8px">Prêt à assumer les frais liés à ma demande de permis de travail pour faciliter une embauche internationale.</p>
+        </div>
+
+        <div id="contact" style="margin-top:12px">
+          <h3>Contact</h3>
+          <div style="color:var(--muted);font-size:14px;margin-top:8px">📞 +221 77 531 25 91</div>
+          <div style="color:var(--muted);font-size:14px;margin-top:4px">✉️ <a class="link" href="mailto:pierresakagnendione@gmail.com">pierresakagnendione@gmail.com</a></div>
+          <div class="contact-actions">
+            <a class="btn" href="/CV-Pierre-Sakagne-Ndione.pdf" target="_blank">Télécharger CV (PDF)</a>
+            <a class="btn" href="/cv-en-Pierre-Sakagne-Ndione.pdf" target="_blank">CV (EN)</a>
+            <a class="btn" href="mailto:pierresakagnendione@gmail.com" style="border:1px solid #e6e6e6">Envoyer un email</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="container" style="max-width:1100px">
+      <div class="card" style="text-align:center;background:transparent;box-shadow:none;padding:14px;margin-top:18px;color:var(--muted)">
+        © 2025 — Pierre Sakagne Ndione — Portfolio généré par ChatGPT
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
